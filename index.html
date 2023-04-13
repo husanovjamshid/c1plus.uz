@@ -428,53 +428,13 @@
 			</section>
 			<!-- End Team Section -->
 
-			<!-- ======= Clients Section ======= -->
-			<section id="clients" class="clients section-bg">
-				<div class="container" data-aos="fade-up">
-					<div class="section-title">
-						<h2>Clients</h2>
-						<p>They trusted us</p>
-					</div>
-
-					<div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
-						<div class="swiper-wrapper align-items-center">
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-1.png" class="img-fluid" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-2.png" class="img-fluid" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-3.png" class="img-fluid" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-4.png" class="img-fluid" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-5.png" class="img-fluid" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-6.png" class="img-fluid" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-7.png" class="img-fluid" alt="" />
-							</div>
-							<div class="swiper-slide">
-								<img src="assets/img/clients/client-8.png" class="img-fluid" alt="" />
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			</section>
-			<!-- End Clients Section -->
+		
 
 			<!-- ======= Contact Us Section ======= -->
 			<section id="contact" class="contact">
 				<div class="container" data-aos="fade-up">
 					<div class="section-title">
-						<h2>Contact Us</h2>
-						<p>Contact us the get started</p>
+						<h2 >Ro'yhatdan o'tish</h2>
 					</div>
 
 					<div class="row">
@@ -486,25 +446,26 @@
 							<div class="info">
 								<div class="address">
 									<i class="bi bi-geo-alt"></i>
-									<h4>Location:</h4>
-									<p>A108 Adam Street, New York, NY 535022</p>
+									<h4>Manzil:</h4>
+									<p><a href="https://www.google.com/maps/place/40%C2%B023'08.7%22N+71%C2%B046'25.3%22E/@40.3858244,71.7735719,19.49z/data=!4m4!3m3!8m2!3d40.385752!4d71.773683">Farg'ona vil. Marg'inoniy ko'ch.</a></p>
 								</div>
 
 								<div class="email">
-									<i class="bi bi-envelope"></i>
+									<i class="bi bi-instagram"></i>
 									<h4>Email:</h4>
-									<p>info@example.com</p>
+									<p><a href="https://instagram.com/c1.plusuz?igshid=YmMyMTA2M2Y=">@c1.plusuz</a></p>
 								</div>
 
 								<div class="phone">
 									<i class="bi bi-phone"></i>
 									<h4>Call:</h4>
-									<p>+1 5589 55488 55s</p>
+									<p><a href="tel:++998732400064">+998 73 240 00 64</a></p>
 								</div>
 
 								<iframe
+									class="map"
 									src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11992.726986994308!2d69.20431214999999!3d41.2831488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1681373889581!5m2!1sru!2s"
-									width="600"
+									width="470"
 									height="450"
 									style="border: 0;"
 									allowfullscreen=""
@@ -520,48 +481,42 @@
 							data-aos-delay="200"
 						>
 							<form
-								action="forms/contact.php"
-								method="post"
-								role="form"
 								class="php-email-form"
 							>
 								<div class="row">
 									<div class="form-group col-md-6">
-										<label for="name">Your Name</label>
+										<label for="name">Ismingiz</label>
 										<input
 											type="text"
 											name="name"
 											class="form-control"
 											id="name"
-											placeholder="Your Name"
+											placeholder="Ismingiz"
 											required
 										/>
 									</div>
 									<div class="form-group col-md-6 mt-3 mt-md-0">
-										<label for="name">Your Email</label>
+										<label for="name">Elektron po'chtangiz</label>
 										<input
 											type="email"
 											class="form-control"
 											name="email"
 											id="email"
-											placeholder="Your Email"
+											placeholder="Elektron po'chtangiz"
 											required
 										/>
 									</div>
 								</div>
 								<div class="form-group mt-3">
-									<label for="name">Subject</label>
-									<input
-										type="text"
-										class="form-control"
-										name="subject"
-										id="subject"
-										placeholder="Subject"
-										required
-									/>
+									<label for="name">Kurs tanlang</label>
+									<select class="form-select" name="course">
+										<option value="course_1">Course 1</option>
+										<option value="course_2">Course 2</option>
+										<option value="course_3">Course 3</option>
+									</select>
 								</div>
 								<div class="form-group mt-3">
-									<label for="name">Message</label>
+									<label for="name">O'zingiz haqingizda</label>
 									<textarea
 										class="form-control"
 										name="message"
@@ -613,6 +568,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-6 footer-contact">
+
+							<a href="/"><img width="150" height="100" src="./assets/img/logo.svg" alt="Site Logo"></a>
+							<h4 class="h6 mt-3">Sizni C1 Plusda ko'rishdan mamnun bo'lamiz!</h4>
+
 							<img
 								width="150"
 								height="150"
@@ -620,6 +579,7 @@
 								alt="Site Logo"
 							/>
 							<h4 class="h6">Sizni C1 Plusda ko'rishdan mamnun bo'lamiz!</h4>
+
 						</div>
 						<div class="col-lg-3 col-md-6">
 							<h4 class="h5">Bizning manzil</h4>
