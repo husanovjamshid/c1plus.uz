@@ -1149,19 +1149,6 @@ section {
 
 #footer .copyright {
 	text-align: center;
-	text-align: center;
-	float: left;
-}
-
-#footer .credits {
-	float: right;
-	text-align: center;
-	font-size: 13px;
-	color: #212529;
-}
-
-#footer .credits a {
-	color: #eb5d1e;
 }
 
 @media (max-width: 575px) {
