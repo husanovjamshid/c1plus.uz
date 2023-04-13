@@ -903,6 +903,7 @@ section {
 	color: #fff;
 }
 
+
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
@@ -1169,5 +1170,10 @@ section {
 		-moz-text-align-last: center;
 		text-align-last: center;
 		padding: 3px 0;
+	}
+	.map {
+		max-width: 470px;
+		width:100%;
+		height: 450px
 	}
 }
