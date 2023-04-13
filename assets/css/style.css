@@ -58,8 +58,8 @@ h6,
 
 .logo-img {
 	width: 100%;
-	max-width: 400px;
-	height: 150px;
+	max-width: 100px;
+	height: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -278,6 +278,7 @@ h6,
 	right: 0;
 	left: 0;
 	bottom: 0;
+  z-index: 999;
 	background: rgba(78, 64, 57, 0.9);
 	transition: 0.3s;
 }
@@ -299,6 +300,7 @@ h6,
 	background-color: #fff;
 	overflow-y: auto;
 	transition: 0.3s;
+  z-index: 999;
 }
 
 .navbar-mobile a,
@@ -592,6 +594,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#course .row div {
+  cursor: pointer;
+}
+
 .services .icon-box {
 	padding: 30px;
 	position: relative;
