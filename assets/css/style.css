@@ -58,8 +58,8 @@ h6,
 
 .logo-img {
 	width: 100%;
-  max-width: 400px;
-  height: 150px;
+	max-width: 400px;
+	height: 150px;
 }
 
 /*--------------------------------------------------------------
@@ -107,7 +107,6 @@ h6,
 	margin-top: 72px;
 }
 
-
 .navbar {
 	padding: 0;
 }
@@ -142,12 +141,27 @@ h6,
 	line-height: 0;
 	margin-left: 5px;
 }
+.navbar a {
+  /* padding-bottom: 0; */
+  font-weight: bold;
+}
 
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
 	color: #eb5d1e;
+	position: relative;
+}
+
+.navbar .active::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	/* left: 0; */
+	width: 50%;
+	height: 2px;
+	background-color: #c7937d;
 }
 
 .navbar .getstarted,
@@ -1133,7 +1147,7 @@ section {
 }
 
 #footer .copyright {
-  text-align: center;
+	text-align: center;
 	text-align: center;
 	float: left;
 }
