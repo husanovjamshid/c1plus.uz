@@ -1,6 +1,9 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #212529;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -404,7 +407,7 @@ h6,
 
 @media (max-width: 991px) {
 	#hero {
-		height: calc(100vh - 72px);
+		height: calc(100vh - 313px);
 	}
 
 	#hero .animated {
@@ -432,7 +435,8 @@ h6,
 	}
 
 	#hero .hero-img img {
-		width: 70%;
+		width: 100%;
+    max-width: 400px;
 	}
 }
 
@@ -444,7 +448,7 @@ h6,
 
 @media (max-height: 600px) {
 	#hero {
-		height: 120vh;
+		height: 80vh;
 	}
 }
 
