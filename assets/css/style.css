@@ -39,11 +39,12 @@ h6,
 	right: 15px;
 	bottom: 15px;
 	z-index: 99999;
-	background: #eb5d1e;
+	background: #eb251e;
 	width: 40px;
 	height: 40px;
-	border-radius: 4px;
+	border-radius: 50px;
 	transition: all 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .back-to-top i {
@@ -988,13 +989,14 @@ section {
 	background: #eb5d1e;
 	border: 0;
 	padding: 10px 24px;
-	color: #fff;
-	transition: 0.4s;
-	border-radius: 4px;
+  border-radius: 30px;
+  transition: 0.5s;
+  color: #fff;
+  background: #eb251e;
 }
 
 .contact .php-email-form button[type='submit']:hover {
-	background: #ef7f4d;
+	background: #ef4d4d;
 }
 
 @keyframes animate-loading {
