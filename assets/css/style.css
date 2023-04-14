@@ -729,6 +729,7 @@ section {
 	background: #343a40;
 	position: relative;
 	overflow: hidden;
+	border-radius: 5px;
 }
 
 .team .member .member-info {
@@ -743,7 +744,7 @@ section {
 
 .team .member .member-info-content {
 	position: absolute;
-	left: 50px;
+	left: 0;
 	right: 0;
 	bottom: 0;
 	transition: bottom 0.4s;
@@ -761,33 +762,6 @@ section {
 	display: block;
 	font-size: 13px;
 	color: #fff;
-}
-
-.team .member .social {
-	position: absolute;
-	left: -50px;
-	top: 0;
-	bottom: 0;
-	width: 50px;
-	transition: left ease-in-out 0.3s;
-	background: rgba(78, 64, 57, 0.6);
-	text-align: center;
-}
-
-.team .member .social a {
-	transition: color 0.3s;
-	display: block;
-	color: #fff;
-	margin-top: 15px;
-}
-
-.team .member .social a:hover {
-	color: #eb5d1e;
-}
-
-.team .member .social i {
-	font-size: 18px;
-	margin: 0 2px;
 }
 
 .team .member:hover .member-info {

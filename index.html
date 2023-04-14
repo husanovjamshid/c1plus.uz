@@ -33,6 +33,10 @@
 			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
 			rel="stylesheet"
 		/>
+		
+		<!-- Slick Carousel -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 		<!-- Vendor CSS Files -->
 		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
@@ -296,28 +300,20 @@
 			<section id="team" class="team">
 				<div class="container">
 					<div class="section-title" data-aos="fade-up">
-						<h2>Jamoa</h2>
-						<p>Bizning o'qituvchilar</p>
+						<p>Bizning kitoblar</p>
 					</div>
 
-					<div class="row">
+					<div class="row slick-carousel">
 						<div
 							class="col-xl-3 col-lg-4 col-md-6"
 							data-aos="zoom-in"
 							data-aos-delay="100"
 						>
 							<div class="member">
-								<img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+								<img src="assets/img/books/Listening.png" class="img-fluid" alt="" />
 								<div class="member-info">
 									<div class="member-info-content">
-										<h4>Walter White</h4>
-										<span>Chief Executive Officer</span>
-									</div>
-									<div class="social">
-										<a href=""><i class="bi bi-twitter"></i></a>
-										<a href=""><i class="bi bi-facebook"></i></a>
-										<a href=""><i class="bi bi-instagram"></i></a>
-										<a href=""><i class="bi bi-linkedin"></i></a>
+										<h4>MULTILEVEL LISTENING CEFR</h4>
 									</div>
 								</div>
 							</div>
@@ -329,17 +325,10 @@
 							data-aos-delay="200"
 						>
 							<div class="member">
-								<img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" />
+								<img src="assets/img/books/grammar.png" class="img-fluid" alt="" />
 								<div class="member-info">
 									<div class="member-info-content">
-										<h4>Sarah Jhonson</h4>
-										<span>Product Manager</span>
-									</div>
-									<div class="social">
-										<a href=""><i class="bi bi-twitter"></i></a>
-										<a href=""><i class="bi bi-facebook"></i></a>
-										<a href=""><i class="bi bi-instagram"></i></a>
-										<a href=""><i class="bi bi-linkedin"></i></a>
+										<h4>ENGLISH GRAMMAR</h4>
 									</div>
 								</div>
 							</div>
@@ -351,17 +340,10 @@
 							data-aos-delay="300"
 						>
 							<div class="member">
-								<img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
+								<img src="assets/img/books/Reading.png" class="img-fluid" alt="" />
 								<div class="member-info">
 									<div class="member-info-content">
-										<h4>William Anderson</h4>
-										<span>CTO</span>
-									</div>
-									<div class="social">
-										<a href=""><i class="bi bi-twitter"></i></a>
-										<a href=""><i class="bi bi-facebook"></i></a>
-										<a href=""><i class="bi bi-instagram"></i></a>
-										<a href=""><i class="bi bi-linkedin"></i></a>
+										<h4>MULTILEVEL READING CEFR</h4>
 									</div>
 								</div>
 							</div>
@@ -373,17 +355,25 @@
 							data-aos-delay="400"
 						>
 							<div class="member">
-								<img src="assets/img/team/team-4.jpg" class="img-fluid" alt="" />
+								<img src="assets/img/books/speaking.png" class="img-fluid" alt="" />
 								<div class="member-info">
 									<div class="member-info-content">
-										<h4>Amanda Jepson</h4>
-										<span>Accountant</span>
+										<h4>MULTILEVEL SPEAKING CEFR</h4>
 									</div>
-									<div class="social">
-										<a href=""><i class="bi bi-twitter"></i></a>
-										<a href=""><i class="bi bi-facebook"></i></a>
-										<a href=""><i class="bi bi-instagram"></i></a>
-										<a href=""><i class="bi bi-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="col-xl-3 col-lg-4 col-md-6"
+							data-aos="zoom-in"
+							data-aos-delay="400"
+						>
+							<div class="member">
+								<img src="assets/img/books/writing.png" class="img-fluid" alt="" />
+								<div class="member-info">
+									<div class="member-info-content">
+										<h4>MULTILEVEL SPEAKING CEFR</h4>
 									</div>
 								</div>
 							</div>
@@ -473,9 +463,10 @@
 								<div class="form-group mt-3">
 									<label for="name">Kurs tanlang</label>
 									<select class="form-select" name="course">
-										<option value="course_1">Course 1</option>
-										<option value="course_2">Course 2</option>
-										<option value="course_3">Course 3</option>
+										<option value="course_1">MULTILEVEL READING CEFR</option>
+										<option value="course_2">MULTILEVEL SPEAKING CEFR</option>
+										<option value="course_3">ENGLISH GRAMMAR CEFR</option>
+										<option value="course_3">MULTILEVEL LISTENING CEFR</option>
 									</select>
 								</div>
 								<div class="form-group mt-3">
@@ -591,6 +582,12 @@
 			><i class="bi bi-arrow-up-short"></i
 		></a>
 
+		<!-- Slick JS -->
+		<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-c arousel@1.8.1/slick/slick.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="./assets/js/slick.min.js"></script>
+		<script src="./assets/js/slick.js"></script>
+
 		<!-- Vendor JS Files -->
 		<script src="assets/vendor/aos/aos.js"></script>
 		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -601,5 +598,6 @@
 
 		<!-- Template Main JS File -->
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/slick.js"></script>
 	</body>
 </html>
