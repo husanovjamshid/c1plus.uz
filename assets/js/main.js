@@ -286,7 +286,7 @@ var elLightBtn = document.querySelector('.light__mode');
 // 	console.log(theme);
 // });
 
-let theme = false;
+let theme = true;
 
 elDarkBtn.addEventListener('click', () => {
 	theme = true;
@@ -308,7 +308,7 @@ elLightBtn.addEventListener('click', () => {
 
 let darkFunc = () => {
 	console.log(window.localStorage.getItem(theme));
-	if (window.localStorage.getItem(theme) === 'dark') {
+	if (window.localStorage.getItem('theme') === 'dark') {
 		elBody.classList.add('dark');
 		elDarkBtn.classList.add('mode__active');
 		elLightBtn.classList.remove('mode__active');
@@ -318,12 +318,12 @@ let darkFunc = () => {
 };
 
 let LightFunc = () => {
-	if (window.localStorage.getItem(theme) === 'light') {
+	if (window.localStorage.getItem('theme') === 'light') {
 		elBody.classList.remove('dark');
 		elDarkBtn.classList.remove('mode__active');
 		elLightBtn.classList.add('mode__active');
+    document.body.style.backgroundColor = '#fff';
 	}
 };
 
 darkFunc();
-LightFunc();
