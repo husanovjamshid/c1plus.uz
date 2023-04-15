@@ -1208,11 +1208,11 @@ section {
 		text-align-last: center;
 		padding: 3px 0;
 	}
-	.map {
-		max-width: 470px;
-		width: 100%;
-		height: 450px;
-	}
+}
+.map {
+	max-width: 470px;
+	width: 100%;
+	height: 450px;
 }
 
 .dark__light {
