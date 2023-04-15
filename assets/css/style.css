@@ -21,6 +21,7 @@
 	--contentColor: #4e4039;
 	--sectionBg: #fef8f5;
 	--footerBg: #fef8f5;
+	--arrowColor: #ef804dda;
 }
 
 .dark {
@@ -33,6 +34,7 @@
 	--contentColor: #fff;
 	--sectionBg: #051f46;
 	--footerBg: #020c1b;
+	--arrowColor: #fef8f5;
 }
 
 #preloader {
@@ -887,7 +889,41 @@ section {
 }
 
 .slick-arrow {
-	display: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	max-width: 30px;
+	width: 100%;
+	height: 30px;
+	padding: 20px !important;
+	border-radius: 10px;
+	background-color: var(--arrowColor);
+	background-image: url('../img/arrow-right.svg');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: center;
+}
+
+.slick-arrow:hover {
+	opacity: 0.8;
+	background-color: var(--arrowColor);
+}
+
+.slick-prev {
+	/* top: 30%; */
+	left: -60px !important;
+	transform: rotate(180deg);
+}
+
+.slick-prev::before {
+	content: '';
+}
+
+.slick-next {
+	right: -60px !important;
+}
+
+.slick-next::before {
+	content: '';
 }
 
 .team .member .member-info {
