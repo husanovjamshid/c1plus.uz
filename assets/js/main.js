@@ -152,15 +152,15 @@
 		}
 	});
 
-	  /**
-   * Preloader
-   */
-	  let preloader = select('#preloader');
-	  if (preloader) {
+	/**
+	 * Preloader
+	 */
+	let preloader = select('#preloader');
+	if (preloader) {
 		window.addEventListener('load', () => {
-		  preloader.remove()
+			preloader.remove();
 		});
-	  }
+	}
 
 	/**
 	 * Porfolio isotope and filter
@@ -273,32 +273,15 @@
 var elBody = document.querySelector('body');
 var elDarkBtn = document.querySelector('.dark__mode');
 var elLightBtn = document.querySelector('.light__mode');
+var elBurger = document.querySelector('.mobile-nav-toggle');
 
-// elDarkBtn.addEventListener('click', function () {
-// 	theme = true;
-// 	elBody.classList.add('dark');
-// 	elDarkBtn.classList.add('mode__active');
-// 	elLightBtn.classList.remove('mode__active');
-// 	console.log(theme);
-//   document.body.style.backgroundColor = "#333";
-
-// 	let bg = 'dark';
-
-// 	window.localStorage.setItem('theme', bg);
-// });
-
-// elLightBtn.addEventListener('click', function () {
-// 	theme = !theme;
-// 	elBody.classList.remove('dark');
-// 	elDarkBtn.classList.remove('mode__active');
-// 	elLightBtn.classList.add('mode__active');
-
-// 	console.log(theme);
-// });
+elBurger.addEventListener('click', () => {
+	elBody.classList.toggle('overflow-hidden');
+});
 
 let theme = true;
 
-window.localStorage.setItem('theme', 'dark')
+window.localStorage.setItem('theme', 'dark');
 
 elDarkBtn.addEventListener('click', () => {
 	theme = true;

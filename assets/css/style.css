@@ -259,28 +259,6 @@ h6,
 	background-color: #fff;
 }
 
-.navbar .getstarted,
-.navbar .getstarted:focus {
-	background: var(--button-bg);
-	color: #fff;
-	padding: 10px 25px;
-	margin-left: 30px;
-	border-radius: 50px;
-}
-
-.dark .navbar .getstarted:focus {
-	background: var(--button-bg);
-	color: #06225f;
-	padding: 10px 25px;
-	margin-left: 30px;
-	border-radius: 50px;
-}
-
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
-	color: var(--contentColor);
-	background: var(--button-bg);
-}
 
 @media only screen and (max-width: 768px) {
 	.get-started {
@@ -297,71 +275,6 @@ h6,
 		margin-bottom: 0px;
 	}
 }
-
-.navbar .dropdown ul {
-	display: block;
-	position: absolute;
-	left: 14px;
-	top: calc(100% + 30px);
-	margin: 0;
-	padding: 10px 0;
-	z-index: 99;
-	opacity: 0;
-	visibility: hidden;
-	background: #fff;
-	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-	transition: 0.3s;
-}
-
-.navbar .dropdown ul li {
-	min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-	padding: 10px 20px;
-	font-size: 15px;
-	text-transform: none;
-}
-
-.navbar .dropdown ul a i {
-	font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-	color: #eb5d1e;
-}
-
-.navbar .dropdown:hover > ul {
-	opacity: 1;
-	top: 100%;
-	visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-	top: 0;
-	left: calc(100% - 30px);
-	visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-	opacity: 1;
-	top: 0;
-	left: 100%;
-	visibility: visible;
-}
-
-@media (max-width: 1366px) {
-	.navbar .dropdown .dropdown ul {
-		left: -90%;
-	}
-
-	.navbar .dropdown .dropdown:hover > ul {
-		left: -100%;
-	}
-}
-
 /**
 * Mobile Navigation 
 */
@@ -398,6 +311,25 @@ h6,
 	z-index: 999;
 	background: rgba(78, 64, 57, 0.9);
 	transition: 0.3s;
+	height: 100vh;
+}
+
+.navbar-mobile .active::after {
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	height: 2px;
+	background-color: var(--bgDark);
+}
+
+.dark .navbar-mobile .active::after {
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	height: 1px;
+	background-color: var(--bgDark);
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -414,10 +346,11 @@ h6,
 	bottom: 15px;
 	left: 15px;
 	padding: 10px 0;
-	background-color: #fff;
+	background-color: var(--bgDark);
 	overflow-y: auto;
 	transition: 0.3s;
 	z-index: 999;
+	border-radius: 15px;
 }
 
 .navbar-mobile a,
