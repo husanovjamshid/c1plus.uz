@@ -288,6 +288,8 @@ var elLightBtn = document.querySelector('.light__mode');
 
 let theme = true;
 
+window.localStorage.setItem('theme', 'dark')
+
 elDarkBtn.addEventListener('click', () => {
 	theme = true;
 
@@ -322,7 +324,7 @@ let LightFunc = () => {
 		elBody.classList.remove('dark');
 		elDarkBtn.classList.remove('mode__active');
 		elLightBtn.classList.add('mode__active');
-    document.body.style.backgroundColor = '#fff';
+		document.body.style.backgroundColor = '#fff';
 	}
 };
 
