@@ -194,7 +194,6 @@ h6,
 .navbar li:hover > a {
 	color: #eb5d1e;
 	transition: all 0.4s ease;
-	/* position: relative; */
 }
 
 .dark .navbar a:hover,
@@ -203,7 +202,6 @@ h6,
 .dark .navbar li:hover > a {
 	color: #1e88eb;
 	transition: all 0.4s ease;
-	/* position: relative; */
 }
 
 .navbar .active::after {
