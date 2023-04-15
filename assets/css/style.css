@@ -742,12 +742,22 @@ section {
 }
 
 .team .member {
+	width: 250px;
 	text-align: center;
 	margin-bottom: 20px;
 	background: #343a40;
 	position: relative;
 	overflow: hidden;
 	border-radius: 5px;
+}
+
+.slick-track {
+	display: flex !important;
+	gap: 20px;
+}
+
+.slick-arrow {
+	display: none !important;
 }
 
 .team .member .member-info {
@@ -801,6 +811,13 @@ section {
 .team .member:hover .social {
 	left: 0;
 	transition: left ease-in-out 0.3s;
+}
+
+@media only screen and (max-width: 576px) {
+	.team .book-item {
+		display: flex !important;
+		justify-content: center !important;
+	}
 }
 
 /*--------------------------------------------------------------
