@@ -19,6 +19,8 @@
 	--header-bg: rgba(250, 244, 244, 0.705);
 	--header-border: rgba(250, 244, 244, 0.705);
 	--contentColor: #4e4039;
+	--sectionBg: #fef8f5;
+	--footerBg: #fef8f5;
 }
 
 .dark {
@@ -29,6 +31,8 @@
 	--header-bg: rgba(0, 0, 0, 0.25);
 	--header-border: rgba(0, 0, 0, 0.25);
 	--contentColor: #fff;
+	--sectionBg: #051f46;
+	--footerBg: #020c1b;
 }
 
 body {
@@ -203,10 +207,27 @@ h6,
 	background-color: #c7937d;
 }
 
+.dark .navbar .active::after {
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	width: 50%;
+	height: 2px;
+	background-color: #fff;
+}
+
 .navbar .getstarted,
 .navbar .getstarted:focus {
 	background: var(--button-bg);
-	color: var(--contentColor);
+	color: #fff;
+	padding: 10px 25px;
+	margin-left: 30px;
+	border-radius: 50px;
+}
+
+.dark .navbar .getstarted:focus {
+	background: var(--button-bg);
+	color: #06225f;
 	padding: 10px 25px;
 	margin-left: 30px;
 	border-radius: 50px;
@@ -415,7 +436,7 @@ h6,
 #hero {
 	width: 100%;
 	height: 70vh;
-	background: var(--bgDark);
+	/* background: var(--bgDark); */
 	/* border-bottom: 2px solid #fcebe3; */
 	margin: 72px 0 -72px 0;
 }
@@ -449,8 +470,26 @@ h6,
 	background: var(--button-bg);
 }
 
+.dark #hero .btn-get-started {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 8px 28px;
+	border-radius: 30px;
+	transition: 0.5s;
+	margin-top: 30px;
+	color: #06225f;
+	background: var(--button-bg);
+}
+
 #hero .btn-get-started:hover {
 	background: #ef7f4d;
+}
+
+.dark #hero .btn-get-started:hover {
+	background: #dfdad8;
 }
 
 #hero .animated {
@@ -529,7 +568,7 @@ section {
 }
 
 .section-bg {
-	background: var(--bgDark);
+	background: var(--sectionBg);
 }
 
 .section-title {
@@ -713,6 +752,10 @@ section {
 	list-style: none;
 }
 
+.faq .collapse p {
+	color: var(--contentColor);
+}
+
 .faq .faq-list li {
 	border-bottom: 1px solid #eae7e5;
 	margin-bottom: 20px;
@@ -729,7 +772,7 @@ section {
 	font-weight: 600;
 	padding-left: 25px;
 	cursor: pointer;
-	color: #c54811;
+	color: var(--contentColor);
 	transition: 0.3s;
 }
 
@@ -754,19 +797,19 @@ section {
 }
 
 .faq .faq-list .collapsed:hover {
-	color: #eb5d1e;
+	color: var(--contentColor);
 }
 
 .dark .faq .faq-list .collapsed:hover {
-	color: #c2aba1;
+	color: var(--contentColor);
 }
 
 .dark .faq .faq-list .collapsed:active {
-	color: #c2aba1;
+	color: var(--contentColor);
 }
 
 .dark .faq .faq-list .collapsed:focus {
-	color: #c2aba1;
+	color: var(--contentColor);
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -873,9 +916,10 @@ section {
 	border-top: 3px solid #eb5d1e;
 	border-bottom: 3px solid #eb5d1e;
 	padding: 30px;
-	background: var(--bgDark);
+	background: var(--sectionBg);
 	width: 100%;
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 15px;
 }
 
 .contact .info i {
@@ -947,8 +991,9 @@ section {
 	border-top: 3px solid #eb5d1e;
 	border-bottom: 3px solid #eb5d1e;
 	padding: 30px;
-	background: var(--bgDark);
+	background: var(--sectionBg);
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 15px;
 }
 
 .contact .php-email-form .form-group {
@@ -1001,6 +1046,8 @@ section {
 	border-radius: 0;
 	box-shadow: none;
 	font-size: 14px;
+	border-radius: 30px;
+	resize: none;
 }
 
 .contact .php-email-form input {
@@ -1012,12 +1059,24 @@ section {
 	color: var(--contentColor);
 }
 
+.dark .contact input:focus {
+	color: #fff;
+}
+
+.dark .contact textarea:focus {
+	color: #fff;
+}
+
 .contact .php-email-form textarea {
-	padding: 10px 12px;
+	padding: 10px 15px;
 	background: var(--bgDark);
 }
 
-.contact textarea {
+.contact textarea::placeholder {
+	color: var(--contentColor);
+}
+
+.contact label {
 	color: var(--contentColor);
 }
 
@@ -1028,6 +1087,15 @@ section {
 	border-radius: 30px;
 	transition: 0.5s;
 	color: #fff;
+}
+
+.dark .contact .php-email-form button[type='submit'] {
+	background: var(--button-bg);
+	border: 0;
+	padding: 10px 24px;
+	border-radius: 30px;
+	transition: 0.5s;
+	color: #06225f;
 }
 
 .contact .php-email-form button[type='submit']:hover {
@@ -1049,8 +1117,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
 	background: var(--bgDark);
-	padding: 0 0 30px 0;
-	color: #212529;
+	/* padding: 0 0 30px 0; */
+	color: var(--contentColor);
 	font-size: 14px;
 }
 
@@ -1108,7 +1176,7 @@ section {
 
 #footer .footer-top {
 	padding: 60px 0 30px 0;
-	background: var(--bgDark);
+	background: var(--footerBg);
 }
 
 #footer .footer-top .footer-contact {
@@ -1128,13 +1196,13 @@ section {
 	line-height: 24px;
 	margin-bottom: 0;
 	font-family: 'Poppins', sans-serif;
-	color: #5c5c5c;
+	color: var(--contentColor);
 }
 
 #footer .footer-top h4 {
 	font-size: 16px;
 	font-weight: bold;
-	color: #212529;
+	color: var(--contentColor);
 	position: relative;
 	padding-bottom: 12px;
 }
@@ -1167,7 +1235,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-	color: #5c5c5c;
+	color: var(--contentColor);
 	transition: 0.3s;
 	display: inline-block;
 	line-height: 1;
@@ -1181,7 +1249,7 @@ section {
 #footer .footer-top .social-links a {
 	font-size: 18px;
 	display: inline-block;
-	background: var(--button-bg);
+	background: #e91809;
 	color: #fff;
 	line-height: 1;
 	padding: 8px 0;
@@ -1194,7 +1262,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-	background: var(--button-bg);
+	background: #e91809;
 	color: #fff;
 	text-decoration: none;
 }
