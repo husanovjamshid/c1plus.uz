@@ -14,11 +14,14 @@
 :root {
 	--main-form-bg: #fff;
 	--button-bg: #eb251e;
+	--bgDark: #fef8f5;
+	--navLink: 
 }
 
 .dark {
 	--main-form-bg: #22343d;
 	--button-bg: #fff;
+	--bgDark: #04152d;
 }
 
 body {
@@ -405,7 +408,7 @@ h6,
 #hero {
 	width: 100%;
 	height: 70vh;
-	background: #fef8f5;
+	background: var(--bgDark);
 	border-bottom: 2px solid #fcebe3;
 	margin: 72px 0 -72px 0;
 }
@@ -519,7 +522,7 @@ section {
 }
 
 .section-bg {
-	background-color: #fef8f5;
+	background: var(--bgDark);
 }
 
 .section-title {
@@ -561,7 +564,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
 	padding: 15px 0;
-	background-color: #fef5f1;
+	background: var(--bgDark);
 	min-height: 40px;
 }
 
@@ -761,7 +764,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-	background: #fff;
+	background: var(--bgDark);
 	padding: 60px 0;
 }
 
@@ -844,7 +847,6 @@ section {
 	}
 }
 
-
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
@@ -852,7 +854,7 @@ section {
 	border-top: 3px solid #eb5d1e;
 	border-bottom: 3px solid #eb5d1e;
 	padding: 30px;
-	background: #fff;
+	background: var(--bgDark);
 	width: 100%;
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -863,7 +865,7 @@ section {
 	float: left;
 	width: 44px;
 	height: 44px;
-	background: #fdf1ec;
+	background: var(--bgDark);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -897,11 +899,11 @@ section {
 .contact .info .social-links a {
 	font-size: 18px;
 	display: inline-block;
-	background: #333;
+	/* background: #333; */
 	color: #fff;
 	line-height: 1;
 	padding: 8px 0;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	text-align: center;
 	width: 36px;
 	height: 36px;
@@ -917,8 +919,8 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-	background: var(--button-bg);
-	color: #fff;
+	background: var(--bgDark);
+	/* color: #fff; */
 }
 
 .contact .php-email-form {
@@ -926,7 +928,7 @@ section {
 	border-top: 3px solid #eb5d1e;
 	border-bottom: 3px solid #eb5d1e;
 	padding: 30px;
-	background: #fff;
+	background: var(--bgDark);
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -1017,16 +1019,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-	background: #fff;
+	background: var(--bgDark);
 	padding: 0 0 30px 0;
 	color: #212529;
 	font-size: 14px;
-	background: #fef8f5;
 }
 
 #footer .footer-newsletter {
 	padding: 50px 0;
-	background: #fef8f5;
+	background: var(--bgDark);
 	text-align: center;
 	font-size: 15px;
 }
@@ -1042,7 +1043,7 @@ section {
 
 #footer .footer-newsletter form {
 	margin-top: 30px;
-	background: #fff;
+	background: var(--bgDark);
 	padding: 6px 10px;
 	position: relative;
 	border-radius: 4px;
@@ -1078,7 +1079,7 @@ section {
 
 #footer .footer-top {
 	padding: 60px 0 30px 0;
-	background: #fff;
+	background: var(--bgDark);
 }
 
 #footer .footer-top .footer-contact {

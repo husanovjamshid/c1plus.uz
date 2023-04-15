@@ -315,7 +315,7 @@ let darkFunc = () => {
 		elDarkBtn.classList.add('mode__active');
 		elLightBtn.classList.remove('mode__active');
 		console.log(theme);
-		document.body.style.backgroundColor = '#333';
+		document.body.style.backgroundColor = '#04152d';
 	}
 };
 
