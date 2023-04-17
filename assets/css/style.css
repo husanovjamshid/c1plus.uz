@@ -1482,7 +1482,7 @@ section {
 		float: none;
 		-moz-text-align-last: center;
 		text-align-last: center;
-		padding: 3px 0;
+		padding: 15px 0 0 0;
 	}
 }
 .map {

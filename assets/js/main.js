@@ -276,7 +276,7 @@ var elLightBtn = document.querySelector('.light__mode');
 var elBurger = document.querySelector('.mobile-nav-toggle');
 
 elBurger.addEventListener('click', () => {
-	elBody.classList.toggle('overflow-hidden');
+	// elBody.classList.toggle('overflow-hidden');
 });
 
 let theme = true;
