@@ -727,7 +727,7 @@ section {
 
 .info-desc {
 	width: 100%;
-	max-width: 208px;
+	max-width: 250px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
@@ -746,7 +746,7 @@ section {
 
 .dark .info-desc {
 	width: 100%;
-	max-width: 208px;
+	max-width: 250px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
