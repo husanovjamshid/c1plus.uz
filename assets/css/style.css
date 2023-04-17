@@ -342,6 +342,7 @@ h6,
 	position: absolute;
 	top: 55px;
 	right: 15px;
+	overflow: hidden;
 	bottom: 15px;
 	left: 15px;
 	padding: 10px 0;
@@ -417,7 +418,7 @@ h6,
 }
 
 .hero-img img {
-	width: 79%;
+	width: 75%;
 	border-radius: 50%;
 }
 
@@ -539,8 +540,6 @@ section {
 	padding: 60px 0;
 	overflow: hidden;
 }
-
-
 
 .section-bg {
 	background: var(--sectionBg);
@@ -711,8 +710,55 @@ section {
 
 .services .description {
 	font-size: 15px;
-	line-height: 28px;
+	line-height: 25px;
+	text-align: start;
 	margin-bottom: 0;
+}
+
+.info-desc {
+	width: 100%;
+	max-width: 208px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 1px;
+	/* display: inline-block; */
+	padding: 8px 28px;
+	border-radius: 30px;
+	transition: 0.5s;
+	margin-top: 30px;
+	color: #fff;
+	background: var(--button-bg);
+}
+
+.dark .info-desc {
+	width: 100%;
+	max-width: 208px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 1px;
+	/* display: inline-block; */
+	padding: 8px 28px;
+	border-radius: 30px;
+	transition: 0.5s;
+	margin-top: 30px;
+	color: #06225f;
+	background: var(--button-bg);
+}
+
+#hero .info-desc:hover {
+	background: #ef7f4d;
+}
+
+.dark .info-desc:hover {
+	background: #dfdad8;
 }
 
 /*--------------------------------------------------------------
@@ -786,8 +832,6 @@ section {
 		max-width: 400px;
 		max-height: 400px;
 	}
-
-	
 }
 
 @media only screen and (max-width: 768px) {
