@@ -415,9 +415,40 @@ h6,
 	/* background: var(--bgDark); */
 	/* border-bottom: 2px solid #fcebe3; */
 	margin: 72px 0 -72px 0;
+	position: relative;
+}
+
+#hero::before {
+	content: '';
+	display: block;
+	position: absolute;
+	background-image: url('.../../../img/bg-books/2.png');
+	top: 60%;
+	left: 27%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	z-index: 99;
+}
+
+#hero::after {
+	content: '';
+	display: block;
+	position: absolute;
+	background-image: url('.../../../img/bg-books/3.png');
+	top: 10%;
+	left: 47%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	z-index: 99;
 }
 
 .hero-img img {
+	position: relative;
+	z-index: 500;
 	width: 75%;
 	border-radius: 50%;
 }
@@ -1162,11 +1193,10 @@ section {
 		top: 150px;
 		left: 20px !important;
 	}
-	
+
 	.slick-next {
 		right: 20px !important;
 	}
-
 }
 
 /*--------------------------------------------------------------
