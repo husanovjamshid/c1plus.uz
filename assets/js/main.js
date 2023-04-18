@@ -279,9 +279,9 @@ elBurger.addEventListener('click', () => {
 	// elBody.classList.toggle('overflow-hidden');
 });
 
-let theme = true;
+let theme = false;
 
-window.localStorage.setItem('theme', 'dark');
+window.localStorage.setItem('theme', 'light');
 
 elDarkBtn.addEventListener('click', () => {
 	theme = true;
@@ -321,4 +321,5 @@ let LightFunc = () => {
 	}
 };
 
+LightFunc();
 darkFunc();
