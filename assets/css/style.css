@@ -537,7 +537,7 @@ h6,
 }
 
 #hero .btn-get-started:hover {
-	background: #ef7f4d;
+	background: #d12e11;
 }
 
 .dark #hero .btn-get-started:hover {
@@ -620,7 +620,6 @@ section {
 	text-align: center;
 	padding-bottom: 30px;
 	font-family: 'Poppins', sans-serif;
-
 }
 
 .section-title h2 {
@@ -1134,8 +1133,6 @@ section {
 	border-radius: 5px;
 }
 
-
-
 .team .member .member-info {
 	opacity: 0;
 	position: absolute;
@@ -1632,7 +1629,6 @@ section {
 	background-image: url('../img/sun-white.png');
 }
 
-
 .slick-track {
 	display: flex !important;
 	gap: 20px;
@@ -1698,15 +1694,35 @@ section {
 	background-color: var(--arrowColor) !important;
 }
 
-
 .navbar-mobile .mobile-nav-toggle {
-    color: #fff;
+	color: #fff;
 }
 
-iframe img {
+.frame-none {
+	display: none;
+}
+
+.frame-img {
 	display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+	height: 100%;
+	max-height: 320px;
+	object-fit: cover;
+	object-position: center;
+	z-index: 55;
+	filter: blur(2.5px);
+}
+
+.frame-block {
+	position: relative;
+	display: block;
+}
+
+.frame-block i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* color: rgb(201, 20, 20); */
+	color: rgb(184, 19, 7);
+	cursor: pointer;
 }

@@ -323,3 +323,16 @@ let LightFunc = () => {
 
 LightFunc();
 darkFunc();
+
+// Frame button
+
+const frameButton = document.querySelector('.frame-button');
+const frameBlock = document.querySelector('.frame-block');
+const frame = document.querySelector('.frame')
+
+frameButton.addEventListener('click', () => {
+	frameBlock.classList.add('d-none');
+	frame.classList.remove('frame-none')
+
+	console.log(frame.setAttribute('src', 'https://www.youtube.com/embed/poImstzxrV8?controls=0autoplay=0'));
+});
