@@ -1697,3 +1697,16 @@ section {
 	opacity: 1 !important;
 	background-color: var(--arrowColor) !important;
 }
+
+
+.navbar-mobile .mobile-nav-toggle {
+    color: #fff;
+}
+
+iframe img {
+	display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
