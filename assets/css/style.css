@@ -1712,6 +1712,11 @@ section {
 	filter: blur(2.5px);
 }
 
+.frame {
+	height: 100%;
+	max-height: 320px;
+}
+
 .frame-block {
 	position: relative;
 	display: block;
