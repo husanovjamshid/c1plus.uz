@@ -429,7 +429,7 @@ h6,
 	background-repeat: no-repeat;
 	width: 200px;
 	height: 200px;
-	z-index: 99;
+	z-index: -1;
 }
 
 #hero::after {
@@ -443,7 +443,16 @@ h6,
 	background-repeat: no-repeat;
 	width: 200px;
 	height: 200px;
-	z-index: 99;
+	z-index: -1;
+}
+@media only screen and (max-width: 991px) {
+	#hero::before {
+		display: none;
+	}
+
+	#hero::after {
+		display: none;
+	}
 }
 
 .hero-img img {
@@ -797,8 +806,9 @@ section {
 	background: var(--button-bg);
 }
 
-#hero .info-desc:hover {
-	background: #ef7f4d;
+ .info-desc:hover {
+	background: var(--button-bg);
+	color: #fff;
 }
 
 .dark .info-desc:hover {
@@ -1345,11 +1355,21 @@ section {
 	background: var(--bgDark);
 }
 
-.contact input::placeholder {
-	color: var(--contentColor);
+.dark .contact .php-email-form input {
+	height: 44px;
+	background: var(--bgDark);
+	color: #fff;
 }
 
+/* .contact input::placeholder {
+	color: var(--contentColor);
+} */
+
 .dark .contact input:focus {
+	color: #fff;
+}
+
+.dark .contact input::placeholder {
 	color: #fff;
 }
 
