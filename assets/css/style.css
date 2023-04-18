@@ -684,7 +684,10 @@ section {
 }
 
 .services .icon-box {
-	padding: 30px;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	align-items: center;
 	position: relative;
 	overflow: hidden;
 	margin: 0 0 0px 0;
