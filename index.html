@@ -133,35 +133,25 @@
 					<div class="section-title">
 						<h2>Biz haqimizda</h2>
 					</div>
-					<div class="row justify-content-between">
+					<div class="row justify-content-between about-content">
 						<div
-							class="col-lg-5 d-flex align-items-center justify-content-center about-img "
+							class="col-lg-5 d-flex align-items-center justify-content-center about-content-item"
 						>
 							<div class="frame-block">
 								<iframe
-									class="iframes rounded-5 m-auto frame-img "
-									width="500"
+									class="iframes rounded-5 m-auto frame-img"
+									width="560"
 									title="YouTube video player"
 									frameborder="0"
 									src=""
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
 									allowfullscreen
-									
 								>
 								</iframe>
 								<i class="bi bi-play-circle-fill m-0 frame-button"></i>
 							</div>
-							<div class="d-none">
-								<!-- <img
-									class="rounded-5 m-auto frame-img"
-									width="500"
-									src="./assets/img/girls/7.webp"
-									alt=""
-								/> -->
-								<!-- <i class="bi bi-play-circle-fill m-0 frame-button"></i> -->
-							</div>
 						</div>
-						<div class="col-lg-6 pt-5 pt-lg-0">
+						<div class="col-lg-6 pt-5 pt-lg-0 about-content-item">
 							<div class="row">
 								<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
 									<i class="bx bx-book-bookmark"></i>
@@ -626,26 +616,56 @@
 							data-aos="fade-up"
 							data-aos-delay="200"
 						>
-							<form autocomplete="off" class="php-email-form">
+							<!-- <form onsubmit="sendEmail(event)" method="post" class="php-email-form">
+								<input
+									type="text"
+									value="coneplus.info@gmail.com"
+									id="name"
+									class="namef visually-hidden position-absolute l-0"
+								/>
+								<input type="text" id="phone" class="phonef" requireds />
+								<input
+									type="text"
+									id="raqam"
+									class="phonef"
+									requireds
+									placeholder="raqam"
+								/>
+								<button type="submit">Send</button>
+							</form> -->
+							<form
+								onsubmit="sendEmail(event)"
+								method="post"
+								autocomplete="off"
+								method="POST"
+								class="php-email-form"
+							>
 								<div class="row">
 									<div class="form-group col-md-12">
+										<input
+											type="text"
+											value="coneplus.info@gmail.com"
+											id="name"
+											class="namef visually-hidden position-absolute l-0"
+										/>
 										<label class="mb-0 mb-md-3" for="name">Ismingiz:</label>
 										<input
 											type="text"
 											name="name"
-											class="form-control"
-											id="name"
+											class="form-control name"
+											id="phone"
 											placeholder="Ismingiz"
 											required
 										/>
 									</div>
+
 									<div class="form-group col-md-12 mt-4 mt-md-5">
 										<label class="mb-0 mb-md-3" for="phone">Telefon raqamingiz:</label>
 										<input
 											type="number"
-											class="form-control"
+											class="form-control phone"
 											name="phone"
-											id="phone"
+											id="raqam"
 											placeholder="+998 73 240 00 64"
 											required
 										/>
@@ -666,24 +686,31 @@
 			<div class="footer-top">
 				<div class="container">
 					<div class="row justify-content-around">
-						<div class="col-lg-2 col-md-6 footer-contact">
+						<div class="col-md-4 col-lg-2 footer-contact">
 							<a href="/"
 								><img width="150" src="./assets/img/logo.svg" alt="Site Logo"
 							/></a>
-							<h4 class="h6 mt-3">Sizni C1 Plusda ko'rishdan mamnun bo'lamiz!</h4>
+							<h4 class="h6 mt-3 mb-0">Sizni C1 Plusda ko'rishdan mamnun bo'lamiz!</h4>
 						</div>
-						<div class="col-md-6 col-lg-2">
-							<h4 class="h5">Bizning manzil</h4>
-							<p>
-								Farg'ona viloyati <br />
-								Buhoriddin Marg'iloniy<br />
-								ko'chasi<br />
-								Mo'ljal: Orasta kafesi yonida<br />
-							</p>
+						<div class="col-md-3 col-lg-2">
+							<h4 class="h5 m-0 pb-1">Linklar</h4>
+							<ul class="list-unstyled m-0 p-0 footer-list">
+								<li class="mb-1">
+									<a class="nav-link scrollto" href="#hero">Bosh sahifa</a>
+								</li>
+								<li class="mb-1">
+									<a class="nav-link scrollto" href="#about">Biz haqimizda</a>
+								</li>
+								<li class="mb-1"><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+
+								<li>
+									<a class="nav-link scrollto" href="#book">Kitoblar</a>
+								</li>
+							</ul>
 						</div>
 
-						<div class="col-lg-2 col-md-6 footer-links">
-							<h4>Bizni kuzatib boring</h4>
+						<div class="col-md-5 col-lg-2 mt-4 footer-links">
+							<h4 class="m-0 p-0">Bizni kuzatib boring</h4>
 							<div class="social-links mt-3">
 								<a
 									href="https://instagram.com/c1.plusuz?igshid=YmMyMTA2M2Y="
@@ -753,6 +780,34 @@
 			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
 
 			const swiper = new Swiper();
+		</script>
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			const form = document.querySelector('.php-email-form');
+
+			const name = document.querySelector('.namef');
+			const phone = document.querySelector('.phonef');
+			function sendEmail(e) {
+				e.preventDefault();
+				Email.send({
+					SecureToken: 'ccd017d5-eb82-4a42-947d-8d9ed706c6ad',
+					Host: 'smtp.elasticemail.com',
+					Username: 'coneplus.info@gmail.com',
+					Password: '05BA3C397DFFDB0E893AFBDEB3B451C1295F',
+					To: 'c1plusuzb@gmail.com',
+					From: document.getElementById('name').value,
+					Subject: document.getElementById('phone').value,
+					Body:
+						'Name: ' +
+						document.getElementById('phone').value +
+						' ' +
+						'  ' +
+						'Phone: ' +
+						document.getElementById('raqam').value,
+				}).then((message) => alert(message));
+				return true;
+			}
 		</script>
 
 		<!-- Template Main JS File -->
