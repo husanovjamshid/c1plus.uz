@@ -328,7 +328,7 @@ darkFunc();
 
 const frameButton = document.querySelector('.frame-button');
 const frameBlock = document.querySelector('.frame-block');
-const frame = document.querySelector('.frame');
+const frame = document.querySelector('.iframes');
 
 const deleteImg = () => {
 	setTimeout(() => {
@@ -338,23 +338,31 @@ const deleteImg = () => {
 
 const blockFrame = () => {
 	setTimeout(() => {
+		frame.setAttribute(
+			'src',
+			'https://www.youtube.com/embed/poImstzxrV8?controls=1rel=0&autoplay=1',
+		);
+	}, 1);
+
+	setTimeout(() => {
 		frame.classList.remove('frame-none');
-	}, 500);
+	}, 5000);
 };
 
-const allReverse = () => {
-	setTimeout(() => {
-		frameBlock.classList.remove('d-none');
-		frame.classList.add('frame-none');
-	}, 41000);
-};
+// const allReverse = () => {
+// 	setTimeout(() => {
+// 		frameBlock.classList.remove('d-none');
+// 		frame.classList.add('frame-none');
+// 	}, 41000);
+// };
 
 frameButton.addEventListener('click', () => {
 	frame.setAttribute(
 		'src',
 		'https://www.youtube.com/embed/poImstzxrV8?controls=1rel=0&autoplay=1',
 	);
-	deleteImg();
-	blockFrame();
-	// allReverse();
+
+	frame.classList.remove('frame-img');
+
+	frameButton.classList.add('d-none')
 });
