@@ -5,13 +5,25 @@
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 		<title>C1 Plus - Noldan boshlab C1 darajagacha chiqish!</title>
-		<meta content="" name="description" />
-		<meta content="" name="keywords" />
+		<meta content="Noldan boshlab C1 darajagacha chiqish!" name="description" />
 		<meta
-			name="google-site-verification"
-			content="YUTVcLqQ1n4T-nbeyGHHE9DwrccMj18NXWNNqL-eze4"
+			content="c1plus, c1plusuz, c1plus uz, coneplus, coneplusuz, coneplus uz"
+			name="keywords"
 		/>
-		<meta name="yandex-verification" content="208dbc3e62395d96" />
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-0TWR0TTNQ5"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-0TWR0TTNQ5');
+		</script>
 
 		<!-- Favicons -->
 		<link
@@ -487,6 +499,9 @@
 							</div>
 						</li>
 					</ul>
+					<a class="info-desc" href="#contact"
+						>Ro'yxatdan o'tish <i class="ms-2 bi bi-arrow-right-circle"></i
+					></a>
 				</div>
 			</section>
 			<!-- End F.A.Q Section -->
@@ -616,28 +631,11 @@
 							data-aos="fade-up"
 							data-aos-delay="200"
 						>
-							<!-- <form onsubmit="sendEmail(event)" method="post" class="php-email-form">
-								<input
-									type="text"
-									value="coneplus.info@gmail.com"
-									id="name"
-									class="namef visually-hidden position-absolute l-0"
-								/>
-								<input type="text" id="phone" class="phonef" requireds />
-								<input
-									type="text"
-									id="raqam"
-									class="phonef"
-									requireds
-									placeholder="raqam"
-								/>
-								<button type="submit">Send</button>
-							</form> -->
 							<form
-								action="https://formsubmit.co/c1plusuzb@gmail.com"
-								method="POST"
+								onsubmit="sendEmail(event)"
+								method="post"
 								autocomplete="off"
-								target="_blank"
+								method="POST"
 								class="php-email-form"
 							>
 								<div class="row">
@@ -782,7 +780,7 @@
 			const swiper = new Swiper();
 		</script>
 
-		<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<script>
 			const form = document.querySelector('.php-email-form');
 
@@ -808,7 +806,7 @@
 				}).then((message) => alert(message));
 				return true;
 			}
-		</script> -->
+		</script>
 
 		<!-- Template Main JS File -->
 		<script src="assets/js/main.js"></script>

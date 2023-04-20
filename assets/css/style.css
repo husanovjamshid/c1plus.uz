@@ -514,7 +514,7 @@ h6,
 	font-size: 16px;
 	letter-spacing: 1px;
 	display: inline-block;
-	padding: 8px 28px;
+	padding: 13px 28px;
 	border-radius: 30px;
 	transition: 0.5s;
 	margin-top: 30px;
@@ -803,7 +803,7 @@ section {
 	font-size: 16px;
 	letter-spacing: 1px;
 	/* display: inline-block; */
-	padding: 8px 28px;
+	padding: 13px 28px;
 	border-radius: 30px;
 	transition: 0.5s;
 	margin-top: 30px;
@@ -1387,7 +1387,7 @@ section {
 .dark .contact .php-email-form button[type='submit'] {
 	background: var(--button-bg);
 	border: 0;
-	padding: 10px 24px;
+	padding: 13px 24px;
 	border-radius: 30px;
 	transition: 0.5s;
 	color: #06225f;
